@@ -7,6 +7,6 @@ app.use(cors());
 
 app.use("/api/v1",mainRouter);
 
-app.listen(5000,() =>{
+app.listen(process.env.PORT || 5000,() =>{
     console.log("Application is started")
 })
